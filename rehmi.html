@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.list').click(function(){
+        var value= $(this).atr('data-filter');
+        if (value=='all') {
+            $('.box').show('1000');
+        }
+        else{
+            $('.box').not('.'+value).hide("1000");
+            $('.box').not('.'+value).show("1000");
+
+        }
+    })
+})
+$('.list').click(function(){
+    $('.list').removeClass('active')
+    $(this).addClass('active')
+    
+}
+)
+
+            
+        // } else {
+            
+        // }        
+        
+    </script>
+    <link rel="stylesheet" href="rehmi.css">
+</head>
+<body>
+    <ul>
+        <li class="list" data-filter="all">ALL</li>
+        <li class="list" data-filter="all">BAGES</li>
+        <li class="list" data-filter="all">SHOES</li>
+        <li class="list" data-filter="all">SHIRT</li>
+
+    </ul>
+    <div class="box shoes"><img src="1.jfif" alt=""></div>
+    <div class="box bages"><img src="2.jfif" alt=""></div>
+    <div class="box bages"><img src="3.jfif" alt=""></div>
+    <div class="box bages"><img src="4.jfif" alt=""></div>
+    <div class="box bages"><img src="5.jfif" alt=""></div>
+    <div class="box shoes"><img src="6.jfif" alt=""></div>
+    <div class="box shoes"><img src="7.jfif" alt=""></div>
+    <div class="box shoes"><img src="8.jfif" alt=""></div>
+    <div class="box shoes"><img src="9.jfif" alt=""></div>
+    <div class="box shoes"><img src="10.jfif" alt=""></div>
+    <div class="box clothes"><img src="1.jfif" alt=""></div>
+    <div class="box clothes"><img src="2.jfif" alt=""></div>
+    <div class="box clothes"><img src="3.jfif" alt=""></div>
+    <div class="box clothes"><img src="4.jfif" alt=""></div>
+
+</body>
+</html>
